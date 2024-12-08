@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Beyond Broadcast</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">Topics <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="I - Understanding Disruptive Technologies.html" class="w3-bar-item w3-button">Understanding Disruptive Technologies</a>
+          <a href="II - Netflix as a Disruptive Technology.html" class="w3-bar-item w3-button">Netflix as a Disruptive Technology</a>
+          <a href="III - The Current State of Television Industry.html" class="w3-bar-item w3-button">The Current State of Television Industry</a>
+          <a href="IV - Netflix’s Impact on the Traditional Television Industry.html" class="w3-bar-item w3-button">Netflix’s Impact on the Traditional Television Industry</a>
+          <a href="V - Technological and Cultural Drivers.html" class="w3-bar-item w3-button">Technological and Cultural Drivers</a>
+          <a href="VI - Traditional Television Industry Feedback.html" class="w3-bar-item w3-button">Traditional Television Industry Feedback</a>
+          <a href="VII - Killing Media Preservation.html" class="w3-bar-item w3-button">Killing Media Preservation</a>
+          <a href="VIII - The Future Implications of this Impact.html" class="w3-bar-item w3-button">The Future Implications of this Impact</a>
+        </div>
+      </div>
+      <a href="Conclusion.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Conclusion</a>
+      <a href="XII - Team Member.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Team Member</a>
+      <a href="XI - Reference.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Reference</a>
+    </div>
+  </div>
+  
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="index.html#topics" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Topics</a>
+    <a href="Conclusion.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Conclusion</a>
+    <a href="XII - Team Member.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Team Member</a>
+    <a href="XI - Reference.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Reference</a>
+  </div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+  <!-- Topic -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Conclusion</h2><br>
+    <p class="w3-justify">Today, Netflix has taken the world by storm. Due to the convenience of its services and their exclusive quality media productions and/or content, its popularity is increasing by the minute – new subscribers keep coming. In some households, it even has become a staple, a necessity – it has its share of the monthly budget, just like water, electric, and internet bills. Given these reasons, there’s no doubt that Netflix and similar streaming platforms disrupted and are currently disrupting the balance in the world of media.</p>
+    <p class="w3-justify">Although it has its pros, with convenience as its main desirable aspect (streaming anytime, anywhere), it has been mentioned that its downside includes the “expiry” or removal of some of the content in their platform after some time. If one of their exclusive contents gets removed or becomes unavailable on their platform, there won’t be any legal way to view that content any longer, unless it has been bought or licensed by another platform. Furthermore, Netflix currently doesn’t offer any live streaming service that television and other platforms such as YouTube and Facebook have. However, Netflix might address these weaknesses in the future, or if they move too slowly, they can be overtaken by another technology that would be developed in the future.</p>
+    <p class="w3-justify">Our world, both physical and digital/virtual, has its life cycle. The old gets replaced by the new, and only a few get to withstand the test of time due to its “timelessness” or by gaining loyal audiences or customers. To survive, it is essential to adapt, evolve, and learn to address the weaknesses of a product, service, or technology.  What we may know today as disruptors will eventually become the norm, and there will be a rise of newer technologies that will then become the new “disruptors.”</p>
+    
+  </div> 
+  <!-- End Page Content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 4000);    
+    }
+    
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+    
+    </body>
+    </html>

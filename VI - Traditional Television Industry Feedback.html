@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Beyond Broadcast</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">Topics <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="I - Understanding Disruptive Technologies.html" class="w3-bar-item w3-button">Understanding Disruptive Technologies</a>
+          <a href="II - Netflix as a Disruptive Technology.html" class="w3-bar-item w3-button">Netflix as a Disruptive Technology</a>
+          <a href="III - The Current State of Television Industry.html" class="w3-bar-item w3-button">The Current State of Television Industry</a>
+          <a href="IV - Netflix’s Impact on the Traditional Television Industry.html" class="w3-bar-item w3-button">Netflix’s Impact on the Traditional Television Industry</a>
+          <a href="V - Technological and Cultural Drivers.html" class="w3-bar-item w3-button">Technological and Cultural Drivers</a>
+          <a href="VI - Traditional Television Industry Feedback.html" class="w3-bar-item w3-button">Traditional Television Industry Feedback</a>
+          <a href="VII - Killing Media Preservation.html" class="w3-bar-item w3-button">Killing Media Preservation</a>
+          <a href="VIII - The Future Implications of this Impact.html" class="w3-bar-item w3-button">The Future Implications of this Impact</a>
+        </div>
+      </div>
+      <a href="Conclusion.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Conclusion</a>
+      <a href="XII - Team Member.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Team Member</a>
+      <a href="XI - Reference.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Reference</a>
+    </div>
+  </div>
+  
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="index.html#topics" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Topics</a>
+    <a href="Conclusion.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Conclusion</a>
+    <a href="XII - Team Member.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Team Member</a>
+    <a href="XI - Reference.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Reference</a>
+  </div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Banner -->
+    <div class="mySlides w3-display-container w3-center">
+      <img src="7st.png" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"> 
+      </div>
+    </div>
+
+
+  <!-- Topic -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Topic 6</h2><br>
+    <p class="w3-justify">Despite the drop of traditional television due to the escalating popularity of streaming, it stays alive to be essential for elderly audiences with high spending power through showing live events such as news, sports, and entertainment, sustaining an average of viewing four hours daily (Cablefax, 2024). To stay competitive, many traditional broadcasters are implementing modern technologies such as interactive TV and personalized advertisements. But of course, many viewers prefer streaming platforms because of the idea that they can watch multiple episodes of TV programs in one sitting over a short period (Sanusi & Ola, 2023). Additionally, streaming platforms offer the ability to watch entertainment, news, and sports whenever you want to, anytime and from anywhere in the world.</p>
+    <p class="w3-justify">Before acknowledging the threat from streaming services like Netflix, traditional broadcasters are adopting streaming by partnering with popular platforms. Partnering with well-established services allows them to reach younger audiences and profit from older programs through content licensing agreements (Krizancic, 2023). These strategies endeavor to incorporate the adaptability and convenience of streaming with traditional benefits such as live programming. </p>
+    <p class="w3-justify">Traditional broadcast television has been dominated by the increasing number of streaming services like Netflix, which provides a more personalized, on-demand, and flexible viewing experience (Krizancic, 2023). However, amid these challenges, the experience of watching live TV broadcasts is still alive. Obviously the entertainment industry is going through a significant transformation as streaming services continue to evolve and grow in demand. </p>
+    
+  </div> 
+  <!-- End Page Content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 4000);    
+    }
+    
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+    
+    </body>
+    </html>
